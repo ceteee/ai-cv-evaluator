@@ -1,0 +1,15 @@
+chroma
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+.editorconfig
+
+src/storages/files/*
+src/storages/logs/*
+src/storages/databases/*
+!src/storages/databases/evaluator.db
+
+src/assets/*
+!src/assets/Case Study Brief - Backend.pdf
