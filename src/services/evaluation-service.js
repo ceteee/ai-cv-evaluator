@@ -88,7 +88,7 @@ class EvaluationService {
     const cvFile = fs.readFileSync(cvDoc[0].path);
     const cvText = await parserRepository.getText(cvFile);
     const projectFile = fs.readFileSync(cvDoc[0].path);
-    const projectText = await parserRepository.getText(cvFile);
+    const projectText = await parserRepository.getText(projectFile);
     const updated = await this.evaluationRepository.update(id, {
       process_status: processStatus.PROCESSING,
     });
